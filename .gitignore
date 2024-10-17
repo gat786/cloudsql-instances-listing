@@ -1,1 +1,4 @@
 .venv
+instances.json
+__pycache__
+outputs

@@ -1,5 +1,10 @@
 import logging
+import dotenv
+import os
 
-logger = logging.getLogger(__name__)
+dotenv.load_dotenv()
+logging.basicConfig(
+  level=logging.DEBUG
+)
 
-logger.setLevel(logging.DEBUG)
+output_dir = os.getenv("OUTPUT_DIR", "outputs")
